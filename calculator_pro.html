@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<body>
+    <script>
+        function calc() {
+            var numOne = parseInt(document.getElementById("t1").value);
+            var numTwo = parseInt(document.getElementById("t2").value);
+
+            // var numOne = 12,
+            //     numTwo = 10,
+            //     res;
+            res = numOne + numTwo;
+            document.write("Addition is: = " + res + "<br/>");
+            res = numOne - numTwo;
+            document.write("Subtraction is: = " + res + "<br/>");
+            res = numOne * numTwo;
+            document.write("Multiplication is: = " + res + "<br/>");
+            res = numOne / numTwo;
+            document.write("Division is: = " + res + "<br/>");
+        }
+    </script>
+    Enter No1:<input type="number" id="t1"><br/> Enter No2:<input type="number" id="t2"><br/>
+
+    <input type="button" onclick="calc()" value="add-sub-mul-div" />
+</body>
+
+</html>
